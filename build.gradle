@@ -1,28 +1,24 @@
 plugins {
-	id 'org.springframework.boot' version '2.2.2.RELEASE'
-	id 'io.spring.dependency-management' version '1.0.8.RELEASE'
-	id 'java'
-	id 'idea'
+    id 'org.springframework.boot' version '2.3.1.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.9.RELEASE'
+    id 'java'
 }
 
-group = 'com.xdlr.t'
+group = 'com.xdlr'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '1.8'
 
 repositories {
-	mavenCentral()
+    mavenCentral()
 }
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
-	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-	implementation 'org.springframework.boot:spring-boot-starter-web'
-	runtimeOnly 'mysql:mysql-connector-java'
-	testImplementation('org.springframework.boot:spring-boot-starter-test') {
-		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
-	}
+    implementation 'org.springframework.boot:spring-boot-starter-web-services'
+    testImplementation('org.springframework.boot:spring-boot-starter-test') {
+        exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+    }
 }
 
 test {
-	useJUnitPlatform()
+    useJUnitPlatform()
 }
