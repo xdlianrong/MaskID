@@ -1,0 +1,8 @@
+.gradle
+.idea
+my-app
+my-tomcat
+user-guide
+*.iml
+*.ipr
+*.iws
